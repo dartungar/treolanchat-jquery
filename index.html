@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>TreolanChat UI 3000</title>
+  </head>
+  <body>
+    <h3>Введите логин и пароль для доступа к данным чата</h3>
+    <span>Логин</span>
+    <input id="login" type="text" />
+    <span>Пароль</span>
+    <input id="password" type="password" />
+    <h3>
+      Введите номер запроса и нажмите кнопку, чтобы получить сообщения из чата
+      по запросу
+    </h3>
+
+    <form action="" id="messageForm">
+      <!-- добавить ограничение по длине и значению -->
+
+      <input
+        type="number"
+        name="queryKey"
+        title="Номер запроса"
+        min="0"
+        max="9999999"
+      />
+      <button type="submit">Получить сообщения</button>
+    </form>
+    <div id="messageContainer"></div>
+    <script src="request.js"></script>
+  </body>
+</html>
